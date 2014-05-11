@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+            <record id="view_currency_extra_form" model="ir.ui.view">
+            <field name="name">res.currency.extra.form</field>
+            <field name="model">res.currency</field>
+            <field name="inherit_id" ref="base.view_currency_form"/>
+            <field name="arch" type="xml">
+                <form string="Currency" version="7.0" position="replace">
+                    <form string="Currency" version="7.0">
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="rate_silent"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="rate_extra"/>
+                        </group>
+
+                        <group>
+                            <group string="Price Accuracy">
+                                <field name="rounding"/>
+                                <field name="accuracy"/>
+                            </group>
+
+                            <group string="Display">
+                                <field name="symbol"/>
+                                <field name="position"/>
+                            </group>
+
+                            <group string="Miscellaneous">
+                                <field name="base"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+
+                        <field mode="tree" name="rate_ids" attrs="{'readonly':[('base','=',True)]}">
+                            <tree string="Rates" editable="bottom">
+                                <field name="name"/>
+                                <field name="rate"/>
+                                <field name="rate_extra" on_change="onchange_rate_extra(rate_extra)"/>
+                            </tree>
+                        </field>
+                    </form>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

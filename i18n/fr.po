@@ -1,0 +1,59 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* account_currency_extra
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20140426-231242\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-05-11 23:19+0000\n"
+"PO-Revision-Date: 2014-05-11 23:19+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_currency_extra
+#: field:res.currency,rate_extra:0
+#: field:res.currency.rate,rate_extra:0
+msgid "Conversion Rate"
+msgstr "Taux de conversion"
+
+#. module: account_currency_extra
+#: view:res.currency:0
+msgid "Miscellaneous"
+msgstr "Divers"
+
+#. module: account_currency_extra
+#: help:res.currency,rate_extra:0
+msgid "Rate = 1/Conversion Rate : example : 1 EUR = 11.25 MAD"
+msgstr "Rate = 1/Conversion Rate : example : 1 EUR = 11.25 MAD"
+
+#. module: account_currency_extra
+#: model:ir.model,name:account_currency_extra.model_res_currency
+#: view:res.currency:0
+msgid "Currency"
+msgstr "Devise"
+
+#. module: account_currency_extra
+#: view:res.currency:0
+msgid "Price Accuracy"
+msgstr "Précision des prix"
+
+#. module: account_currency_extra
+#: view:res.currency:0
+msgid "Rates"
+msgstr "Taux"
+
+#. module: account_currency_extra
+#: model:ir.model,name:account_currency_extra.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Taux de la devise"
+
+#. module: account_currency_extra
+#: view:res.currency:0
+msgid "Display"
+msgstr "Affichage"
+
